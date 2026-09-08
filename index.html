@@ -1,50 +1,161 @@
-<!-- Morphing Camber Wing -->
-<div class="rounded-lg comp-card p-4 flex flex-col justify-between">
-  <div>
-    <div class="flex items-start justify-between gap-2">
-      <div>
-        <h3 class="text-sm font-bold text-white">Morphing Camber Wing</h3>
-        <div class="text-[11px] font-mono text-emerald-400">Aerodynamics &amp; Adaptive Structures</div>
+<!-- SECTION 1: PROJECTS -->
+    <section id="work" class="relative py-14 border-b border-stone-800/60">
+      <div class="mx-auto max-w-5xl px-5">
+        <div class="flex items-center justify-between mb-6">
+          <div>
+            <span class="text-xs font-mono font-semibold uppercase tracking-wider text-emerald-400">02 // What I'm Building</span>
+            <h2 class="text-lg font-bold text-white mt-0.5">Projects &amp; Hardware</h2>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+          <!-- TOAD Lander -->
+          <div class="rounded-lg comp-card p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <h3 class="text-sm font-bold text-white">TOAD Propulsive Rocket Lander</h3>
+                  <div class="text-[11px] font-mono text-emerald-400">Purdue Space Program Active Controls</div>
+                </div>
+                <span class="font-mono text-[10px] text-stone-500">Aug 2025 – Present</span>
+              </div>
+              
+              <button type="button" class="mt-3 w-full h-36 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('toad-lander.png', 'PSP TOAD Propulsive Lander Vehicle')">
+                <img src="toad-lander.png" alt="TOAD Lander" class="max-h-full max-w-full object-contain p-2 group-hover:scale-105 transition-transform duration-200">
+                <span class="absolute bottom-1.5 right-1.5 rounded bg-stone-950/80 px-1.5 py-0.5 text-[9px] font-mono text-stone-400">Expand</span>
+              </button>
+
+              <p class="mt-2.5 text-xs text-stone-400 leading-relaxed">
+                Structures team lead on an actively stabilized thrust-vectoring rocket. I run the load path analysis, lead CAD reviews, machine motor mounts and brackets on the mill and lathe, and work directly with avionics to pack flight computers and servos cleanly into the airframe.
+              </p>
+            </div>
+            <div class="mt-3 flex flex-wrap gap-1 font-mono text-[10px] text-emerald-300/90">
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Structures Lead</span>
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Load Paths</span>
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Fusion 360 CAM</span>
+            </div>
+          </div>
+
+          <!-- ASTRA Testbed -->
+          <div class="rounded-lg comp-card p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <h3 class="text-sm font-bold text-white">ASTRA Dynamic Flight Controls Rig</h3>
+                  <div class="text-[11px] font-mono text-emerald-400">Purdue Space Program Active Controls</div>
+                </div>
+                <span class="font-mono text-[10px] text-stone-500">2025 – 2026</span>
+              </div>
+
+              <div class="mt-3 grid grid-cols-2 gap-2">
+                <button type="button" class="h-36 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('astra-diagram.png', 'ASTRA Testbed Architecture: 2-Axis Gimbal & Motor Mounts')">
+                  <img src="astra-diagram.png" alt="ASTRA Diagram" class="max-h-full max-w-full object-contain p-1 group-hover:scale-105 transition-transform duration-200">
+                  <span class="absolute bottom-1 left-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-400">Diagram</span>
+                </button>
+                <div class="h-36 rounded bg-[#090e0b] border border-stone-800 overflow-hidden relative">
+                  <iframe class="w-full h-full" src="https://www.youtube.com/embed/1QAoMNO4t8Q" title="ASTRA Flight Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <p class="mt-2.5 text-xs text-stone-400 leading-relaxed">
+                Helped build a benchtop testbed to debug flight software safely on the ground. Designed frame components, motor mounts, and a 2-axis gimbal plate so we could check how sensors react under real motor thrust.
+              </p>
+            </div>
+            <div class="mt-3 flex flex-wrap gap-1 font-mono text-[10px] text-emerald-300/90">
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">2-Axis Gimbal</span>
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Sensor Testing</span>
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Benchtop Rig</span>
+            </div>
+          </div>
+
+          <!-- Morphing Camber Wing -->
+          <div class="rounded-lg comp-card p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <h3 class="text-sm font-bold text-white">Morphing Camber Wing</h3>
+                  <div class="text-[11px] font-mono text-emerald-400">Aerodynamics &amp; Adaptive Structures</div>
+                </div>
+                <span class="font-mono text-[10px] text-stone-500">2026</span>
+              </div>
+
+              <div class="mt-3 grid grid-cols-2 gap-2">
+                <button type="button" class="h-28 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('morphing-wing-cad.png', 'Morphing Camber Wing Internal CAD &amp; Kinematics')">
+                  <img src="morphing-wing-cad.png" alt="Morphing Wing CAD" class="max-h-full max-w-full object-contain p-1 group-hover:scale-105 transition duration-200">
+                  <span class="absolute bottom-1 left-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-400">CAD Model</span>
+                </button>
+                <button type="button" class="h-28 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('morphing-wing-prototype.jpg', 'Morphing Camber Wing Prototype Assembly')">
+                  <img src="morphing-wing-prototype.jpg" alt="Morphing Wing Prototype" class="max-h-full max-w-full object-cover group-hover:scale-105 transition duration-200">
+                  <span class="absolute bottom-1 left-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-400">Prototype</span>
+                </button>
+              </div>
+
+              <p class="mt-2.5 text-xs text-stone-400 leading-relaxed">
+                Designed and prototyped an active morphing camber airfoil to dynamically optimize lift-to-drag ratios across flight regimes. Integrated compliant mechanisms and actuation to reduce parasitic drag without traditional hinged control surface gaps.
+              </p>
+            </div>
+            <div class="mt-3 flex flex-wrap gap-1 font-mono text-[10px] text-emerald-300/90">
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Compliant Structures</span>
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Drag Reduction</span>
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Rapid Prototyping</span>
+            </div>
+          </div>
+
+          <!-- CNC Machining -->
+          <div class="rounded-lg comp-card p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <h3 class="text-sm font-bold text-white">CNC Machining &amp; CAM</h3>
+                  <div class="text-[11px] font-mono text-emerald-400">Fusion 360 &bull; Aluminum Milling</div>
+                </div>
+                <span class="font-mono text-[10px] text-stone-500">Machine Shop</span>
+              </div>
+
+              <div class="mt-3 grid grid-cols-2 gap-2">
+                <button type="button" class="h-28 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('fusion-cam-toolpath.png', 'Fusion 360 CAM Toolpaths')">
+                  <img src="fusion-cam-toolpath.png" alt="Fusion 360 CAM" class="max-h-full max-w-full object-contain p-1 group-hover:scale-105 transition duration-200">
+                  <span class="absolute bottom-1 left-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-400">Toolpaths</span>
+                </button>
+                <button type="button" class="h-28 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('cnc-machined-part.png', 'Finished Milled Aluminum Part')">
+                  <img src="cnc-machined-part.png" alt="Machined Part" class="max-h-full max-w-full object-contain p-1 group-hover:scale-105 transition duration-200">
+                  <span class="absolute bottom-1 left-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-400">Part</span>
+                </button>
+              </div>
+
+              <p class="mt-2.5 text-xs text-stone-400 leading-relaxed">
+                Wrote CAM toolpaths in Fusion 360 using adaptive roughing and boring routines. Milled the finished aluminum hardware on the CNC, hitting tight bore tolerances and clean surface finishes.
+              </p>
+            </div>
+            <div class="mt-3 flex flex-wrap gap-1 font-mono text-[10px] text-emerald-300/90">
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Fusion 360 CAM</span>
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">CNC Milling</span>
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Manual Lathe</span>
+            </div>
+          </div>
+
+          <!-- Solar Oven Challenge -->
+          <div class="rounded-lg comp-card p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <h3 class="text-sm font-bold text-white">Solar Thermal Parabolic Oven</h3>
+                  <div class="text-[11px] font-mono text-emerald-400">UA Engineering Challenge &bull; 1st Place</div>
+                </div>
+                <span class="font-mono text-[10px] text-stone-500">2024</span>
+              </div>
+              <p class="mt-2.5 text-xs text-stone-400 leading-relaxed">
+                Engineered, modeled, and tested a parabolic solar thermal oven. Took 1st place in overall thermal concentration and structural rigidity by keeping the frame lightweight while maximizing focal-point heat.
+              </p>
+            </div>
+            <div class="mt-3 flex flex-wrap gap-1 font-mono text-[10px] text-emerald-300/90">
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">1st Place</span>
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Thermal Testing</span>
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Rapid Prototyping</span>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <span class="font-mono text-[10px] text-stone-500">2026</span>
-    </div>
-
-    <div class="mt-3 grid grid-cols-2 gap-2">
-      <button 
-        type="button" 
-        class="h-28 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" 
-        onclick="openModal('morphing-wing-cad.png', 'Morphing Camber Wing Internal CAD &amp; Kinematics')"
-        aria-label="View Morphing Camber Wing Internal CAD & Kinematics">
-        <img 
-          src="morphing-wing-cad.png" 
-          alt="Morphing Wing CAD internal structure" 
-          loading="lazy"
-          class="max-h-full max-w-full object-contain p-1 group-hover:scale-105 transition duration-200">
-        <span class="absolute bottom-1 left-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-400">CAD Model</span>
-      </button>
-
-      <button 
-        type="button" 
-        class="h-28 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" 
-        onclick="openModal('morphing-wing-prototype.jpg', 'Morphing Camber Wing Prototype Assembly')"
-        aria-label="View Morphing Camber Wing Prototype Assembly">
-        <img 
-          src="morphing-wing-prototype.jpg" 
-          alt="Morphing Wing physical prototype assembly" 
-          loading="lazy"
-          class="max-h-full max-w-full object-cover group-hover:scale-105 transition duration-200">
-        <span class="absolute bottom-1 left-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-400">Prototype</span>
-      </button>
-    </div>
-
-    <p class="mt-2.5 text-xs text-stone-400 leading-relaxed">
-      Designed and prototyped an active morphing camber airfoil to dynamically optimize lift-to-drag ratios across flight regimes. Integrated compliant mechanisms and actuation to reduce parasitic drag without traditional hinged control surface gaps.
-    </p>
-  </div>
-
-  <div class="mt-3 flex flex-wrap gap-1 font-mono text-[10px] text-emerald-300/90">
-    <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Compliant Structures</span>
-    <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Drag Reduction</span>
-    <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Rapid Prototyping</span>
-  </div>
-</div>
+    </section>
