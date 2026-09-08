@@ -1,161 +1,918 @@
-<!-- SECTION 1: PROJECTS -->
-    <section id="work" class="relative py-14 border-b border-stone-800/60">
+<!DOCTYPE html>
+
+<html lang="en" class="scroll-smooth dark">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Jonathan Yates | Purdue Aerospace, Robotics & Controls</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  
+
+  <style>
+
+    body { font-family: 'Inter', sans-serif; }
+
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+
+    
+
+    .topo-bg {
+
+      background-color: #0b110e;
+
+      background-image: 
+
+        radial-gradient(circle at 50% 50%, rgba(45, 78, 61, 0.15) 0%, transparent 65%),
+
+        repeating-radial-gradient(#0b110e 0, #0b110e 14px, #0f1813 15px, #0f1813 16px);
+
+      background-size: 100% 100%, 60px 60px;
+
+    }
+
+    .comp-card {
+
+      background: rgba(14, 23, 18, 0.75);
+
+      border: 1px solid rgba(62, 98, 79, 0.35);
+
+      backdrop-filter: blur(6px);
+
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+    }
+
+    .comp-card:hover {
+
+      border-color: rgba(52, 211, 153, 0.45);
+
+      box-shadow: 0 4px 20px -2px rgba(16, 185, 129, 0.05);
+
+    }
+
+  </style>
+
+</head>
+
+
+
+<body class="min-h-screen topo-bg text-stone-300 antialiased selection:bg-emerald-900/60 selection:text-emerald-200">
+
+
+
+  <!-- Fixed Header -->
+
+  <header class="fixed top-0 z-40 w-full border-b border-stone-800/80 bg-[#0b110e]/85 backdrop-blur-md">
+
+    <div class="mx-auto flex h-14 max-w-5xl items-center justify-between px-5">
+
+      <a href="#top" class="font-mono text-xs font-semibold tracking-wider text-stone-100 hover:text-emerald-400 transition-colors">
+
+        JYATES<span class="text-emerald-500">.ENG</span>
+
+      </a>
+
+      <nav class="flex items-center gap-3 sm:gap-5 text-xs font-medium">
+
+        <a href="#academics" class="text-stone-400 hover:text-stone-100 transition-colors">Academics</a>
+
+        <a href="#work" class="text-stone-400 hover:text-stone-100 transition-colors">Projects</a>
+
+        <a href="#experience" class="text-stone-400 hover:text-stone-100 transition-colors">Experience</a>
+
+        <a href="#skills" class="text-stone-400 hover:text-stone-100 transition-colors">Skills</a>
+
+        <a href="#contact" class="rounded border border-emerald-700/60 bg-emerald-950/60 px-2.5 py-1 font-mono text-[11px] text-emerald-300 hover:border-emerald-400 transition-all">Contact</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <main class="relative">
+
+
+
+    <!-- Hero Section -->
+
+    <section id="top" class="relative pt-24 pb-12 border-b border-stone-800/60">
+
       <div class="mx-auto max-w-5xl px-5">
-        <div class="flex items-center justify-between mb-6">
-          <div>
-            <span class="text-xs font-mono font-semibold uppercase tracking-wider text-emerald-400">02 // What I'm Building</span>
-            <h2 class="text-lg font-bold text-white mt-0.5">Projects &amp; Hardware</h2>
+
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+
+          
+
+          <div class="flex-1">
+
+            <div class="inline-flex items-center gap-2 rounded-full border border-emerald-700/40 bg-emerald-950/40 px-3 py-0.5 text-xs font-mono text-emerald-400 mb-3">
+
+              <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+
+              Purdue AAE &bull; ECE Minor &bull; 3.78 GPA
+
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-white leading-tight">
+
+              Jonathan Yates
+
+            </h1>
+
+            <p class="mt-1 font-mono text-sm text-emerald-400 font-medium">
+
+              Aerospace Engineering &bull; Primary Interest in Robotics &amp; Active Controls Systems
+
+            </p>
+
+            <p class="mt-2.5 text-sm text-stone-400 max-w-xl leading-relaxed">
+
+              I'm an aerospace engineering student at Purdue with an ECE minor focused on robotics and active control systems. I like building physical hardware that moves—whether that means machining rocket parts, wiring PLC test benches, or tuning servos. Currently leading the structures sub-team on our student-run rocket lander.
+
+            </p>
+
+            <div class="mt-4 flex flex-wrap items-center gap-2.5 font-mono text-xs">
+
+              <a href="mailto:yates64@purdue.edu" class="rounded bg-emerald-600 px-3 py-1.5 font-medium text-stone-950 hover:bg-emerald-500 transition-colors">
+
+                yates64@purdue.edu
+
+              </a>
+
+              <a href="tel:9802696162" class="rounded border border-stone-700 bg-stone-900/80 px-3 py-1.5 text-stone-300 hover:border-emerald-500 hover:text-white transition-colors">
+
+                (980) 269-6162
+
+              </a>
+
+              <a href="https://linkedin.com/in/jonathan-yates-purdue" target="_blank" rel="noopener noreferrer" class="rounded border border-stone-700 bg-stone-900/80 px-3 py-1.5 text-stone-300 hover:border-emerald-500 hover:text-white transition-colors">
+
+                LinkedIn
+
+              </a>
+
+              <a href="Jonathan_Yates_Resume_Purdue-Sep2026.pdf" download class="rounded border border-stone-700 bg-stone-900/80 px-3 py-1.5 text-stone-300 hover:border-emerald-500 hover:text-white transition-colors">
+
+                Resume (PDF)
+
+              </a>
+
+            </div>
+
           </div>
+
+
+
+          <!-- Compact Headshot -->
+
+          <div class="flex-shrink-0">
+
+            <div class="h-28 w-28 sm:h-32 sm:w-32 rounded-xl overflow-hidden border border-emerald-700/40 shadow-lg bg-stone-900">
+
+              <img src="jonathan-headshot.jpg" alt="Jonathan Yates" class="h-full w-full object-cover">
+
+            </div>
+
+          </div>
+
+
+
         </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- SECTION: ACADEMICS -->
+
+    <section id="academics" class="relative py-12 border-b border-stone-800/60">
+
+      <div class="mx-auto max-w-5xl px-5">
+
+        <div class="mb-4">
+
+          <span class="text-xs font-mono font-semibold uppercase tracking-wider text-emerald-400">01 // Education</span>
+
+          <h2 class="text-lg font-bold text-white mt-0.5">Academics &bull; Purdue University</h2>
+
+        </div>
+
+
+
+        <div class="rounded-lg comp-card p-4">
+
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 border-b border-stone-800/80 pb-2.5">
+
+            <div>
+
+              <h3 class="text-sm font-bold text-white">B.S. in Aerospace Engineering</h3>
+
+              <div class="text-[11px] font-mono text-emerald-400">Minor in Electrical &amp; Computer Engineering</div>
+
+            </div>
+
+            <span class="font-mono text-[11px] text-stone-500">West Lafayette, IN</span>
+
+          </div>
+
+
+
+          <div class="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3 font-mono text-xs">
+
+            <div class="rounded bg-[#090e0b] border border-stone-800 p-2.5">
+
+              <span class="text-stone-500 text-[10px] block">CUMULATIVE GPA</span>
+
+              <span class="text-emerald-400 font-bold text-base">3.78</span>
+
+            </div>
+
+            <div class="rounded bg-[#090e0b] border border-stone-800 p-2.5">
+
+              <span class="text-stone-500 text-[10px] block">HONORS</span>
+
+              <span class="text-stone-200">Dean's List (2025, 2026)</span>
+
+              <span class="text-stone-400 text-[11px] block">Semester Honors (2025, 2026)</span>
+
+            </div>
+
+            <div class="rounded bg-[#090e0b] border border-stone-800 p-2.5">
+
+              <span class="text-stone-500 text-[10px] block">GRADUATION</span>
+
+              <span class="text-emerald-400 font-bold text-base">Spring 2029</span>
+
+              <span class="text-stone-400 text-[11px] block">Expected Degree Conferral</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- SECTION 1: PROJECTS -->
+
+    <section id="work" class="relative py-14 border-b border-stone-800/60">
+
+      <div class="mx-auto max-w-5xl px-5">
+
+        <div class="flex items-center justify-between mb-6">
+
+          <div>
+
+            <span class="text-xs font-mono font-semibold uppercase tracking-wider text-emerald-400">02 // What I'm Building</span>
+
+            <h2 class="text-lg font-bold text-white mt-0.5">Projects &amp; Hardware</h2>
+
+          </div>
+
+        </div>
+
+
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
+
+
           <!-- TOAD Lander -->
+
           <div class="rounded-lg comp-card p-4 flex flex-col justify-between">
+
             <div>
+
               <div class="flex items-start justify-between gap-2">
+
                 <div>
+
                   <h3 class="text-sm font-bold text-white">TOAD Propulsive Rocket Lander</h3>
+
                   <div class="text-[11px] font-mono text-emerald-400">Purdue Space Program Active Controls</div>
+
                 </div>
+
                 <span class="font-mono text-[10px] text-stone-500">Aug 2025 – Present</span>
+
               </div>
+
               
+
               <button type="button" class="mt-3 w-full h-36 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('toad-lander.png', 'PSP TOAD Propulsive Lander Vehicle')">
+
                 <img src="toad-lander.png" alt="TOAD Lander" class="max-h-full max-w-full object-contain p-2 group-hover:scale-105 transition-transform duration-200">
+
                 <span class="absolute bottom-1.5 right-1.5 rounded bg-stone-950/80 px-1.5 py-0.5 text-[9px] font-mono text-stone-400">Expand</span>
+
+              </button>
+
+
+
+              <p class="mt-2.5 text-xs text-stone-400 leading-relaxed">
+
+                Structures team lead on an actively stabilized thrust-vectoring rocket. I run the load path analysis, lead CAD reviews, machine motor mounts and brackets on the mill and lathe, and work directly with avionics to pack flight computers and servos cleanly into the airframe.
+
+              </p>
+
+            </div>
+
+            <div class="mt-3 flex flex-wrap gap-1 font-mono text-[10px] text-emerald-300/90">
+
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Structures Lead</span>
+
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Load Paths</span>
+
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Fusion 360 CAM</span>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- ASTRA Testbed -->
+
+          <div class="rounded-lg comp-card p-4 flex flex-col justify-between">
+
+            <div>
+
+              <div class="flex items-start justify-between gap-2">
+
+                <div>
+
+                  <h3 class="text-sm font-bold text-white">ASTRA Dynamic Flight Controls Rig</h3>
+
+                  <div class="text-[11px] font-mono text-emerald-400">Purdue Space Program Active Controls</div>
+
+                </div>
+
+                <span class="font-mono text-[10px] text-stone-500">2025 – 2026</span>
+
+              </div>
+
+
+
+              <div class="mt-3 grid grid-cols-2 gap-2">
+
+                <button type="button" class="h-36 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('astra-diagram.png', 'ASTRA Testbed Architecture: 2-Axis Gimbal & Motor Mounts')">
+
+                  <img src="astra-diagram.png" alt="ASTRA Diagram" class="max-h-full max-w-full object-contain p-1 group-hover:scale-105 transition-transform duration-200">
+
+                  <span class="absolute bottom-1 left-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-400">Diagram</span>
+
+                </button>
+
+                <div class="h-36 rounded bg-[#090e0b] border border-stone-800 overflow-hidden relative">
+
+                  <iframe class="w-full h-full" src="https://www.youtube.com/embed/1QAoMNO4t8Q" title="ASTRA Flight Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>
+
+              </div>
+
+
+
+              <p class="mt-2.5 text-xs text-stone-400 leading-relaxed">
+
+                Helped build a benchtop testbed to debug flight software safely on the ground. Designed frame components, motor mounts, and a 2-axis gimbal plate so we could check how sensors react under real motor thrust.
+
+              </p>
+
+            </div>
+
+            <div class="mt-3 flex flex-wrap gap-1 font-mono text-[10px] text-emerald-300/90">
+
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">2-Axis Gimbal</span>
+
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Sensor Testing</span>
+
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Benchtop Rig</span>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- Solar Oven Challenge -->
+
+          <div class="rounded-lg comp-card p-4 flex flex-col justify-between">
+
+            <div>
+
+              <div class="flex items-start justify-between gap-2">
+
+                <div>
+
+                  <h3 class="text-sm font-bold text-white">Solar Thermal Parabolic Oven</h3>
+
+                  <div class="text-[11px] font-mono text-emerald-400">UA Engineering Challenge &bull; 1st Place</div>
+
+                </div>
+
+                <span class="font-mono text-[10px] text-stone-500">2024</span>
+
+              </div>
+
+              <p class="mt-2.5 text-xs text-stone-400 leading-relaxed">
+
+                Engineered, modeled, and tested a parabolic solar thermal oven. Took 1st place in overall thermal concentration and structural rigidity by keeping the frame lightweight while maximizing focal-point heat.
+
+              </p>
+
+            </div>
+
+            <div class="mt-3 flex flex-wrap gap-1 font-mono text-[10px] text-emerald-300/90">
+
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">1st Place</span>
+
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Thermal Testing</span>
+
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Rapid Prototyping</span>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- CNC Machining -->
+
+          <div class="rounded-lg comp-card p-4 flex flex-col justify-between">
+
+            <div>
+
+              <div class="flex items-start justify-between gap-2">
+
+                <div>
+
+                  <h3 class="text-sm font-bold text-white">CNC Machining &amp; CAM</h3>
+
+                  <div class="text-[11px] font-mono text-emerald-400">Fusion 360 &bull; Aluminum Milling</div>
+
+                </div>
+
+                <span class="font-mono text-[10px] text-stone-500">Machine Shop</span>
+
+              </div>
+
+
+
+              <div class="mt-3 grid grid-cols-2 gap-2">
+
+                <button type="button" class="h-28 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('fusion-cam-toolpath.png', 'Fusion 360 CAM Toolpaths')">
+
+                  <img src="fusion-cam-toolpath.png" alt="Fusion 360 CAM" class="max-h-full max-w-full object-contain p-1 group-hover:scale-105 transition duration-200">
+
+                  <span class="absolute bottom-1 left-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-400">Toolpaths</span>
+
+                </button>
+
+                <button type="button" class="h-28 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('cnc-machined-part.png', 'Finished Milled Aluminum Part')">
+
+                  <img src="cnc-machined-part.png" alt="Machined Part" class="max-h-full max-w-full object-contain p-1 group-hover:scale-105 transition duration-200">
+
+                  <span class="absolute bottom-1 left-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-400">Part</span>
+
+                </button>
+
+              </div>
+
+
+
+              <p class="mt-2.5 text-xs text-stone-400 leading-relaxed">
+
+                Wrote CAM toolpaths in Fusion 360 using adaptive roughing and boring routines. Milled the finished aluminum hardware on the CNC, hitting tight bore tolerances and clean surface finishes.
+
+              </p>
+
+            </div>
+
+            <div class="mt-3 flex flex-wrap gap-1 font-mono text-[10px] text-emerald-300/90">
+
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Fusion 360 CAM</span>
+
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">CNC Milling</span>
+
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Manual Lathe</span>
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- SECTION 2: EXPERIENCE -->
+
+    <section id="experience" class="relative py-14 border-b border-stone-800/60">
+
+      <div class="mx-auto max-w-5xl px-5">
+
+        <div class="mb-6">
+
+          <span class="text-xs font-mono font-semibold uppercase tracking-wider text-emerald-400">03 // Experience</span>
+
+          <h2 class="text-lg font-bold text-white mt-0.5">Where I've Worked</h2>
+
+        </div>
+
+
+
+        <!-- NSG Pilkington -->
+
+        <div class="rounded-lg comp-card p-4 mb-4">
+
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 border-b border-stone-800/80 pb-2.5">
+
+            <div>
+
+              <h3 class="text-sm font-bold text-white">NSG Pilkington</h3>
+
+              <div class="text-[11px] font-mono text-emerald-400">Electrical &amp; Systems Engineering Intern</div>
+
+            </div>
+
+            <span class="font-mono text-[11px] text-stone-500">Laurinburg, NC // Summer 2026</span>
+
+          </div>
+
+
+
+          <div class="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-2">
+
+            <button type="button" class="h-28 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('jonathan-wiring.jpg', 'Wiring Hardware Board')">
+
+              <img src="jonathan-wiring.jpg" alt="Jonathan Wiring" class="h-full w-full object-cover group-hover:scale-105 transition duration-200">
+
+              <span class="absolute bottom-1 left-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-300">Wiring Bench</span>
+
+            </button>
+
+            <button type="button" class="h-28 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('control-board-back.jpg', 'Testing Stand Rear')">
+
+              <img src="control-board-back.jpg" alt="Control Board" class="h-full w-full object-cover group-hover:scale-105 transition duration-200">
+
+              <span class="absolute bottom-1 left-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-300">Test Stand</span>
+
+            </button>
+
+            <button type="button" class="h-28 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('nsg-hmi-diagram.png', 'HMI Combustion Graphic')">
+
+              <img src="nsg-hmi-diagram.png" alt="HMI Diagram" class="h-full w-full object-contain p-1 group-hover:scale-105 transition duration-200">
+
+              <span class="absolute bottom-1 left-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-300">HMI Screen</span>
+
+            </button>
+
+          </div>
+
+
+
+          <ul class="mt-3 space-y-1 text-xs text-stone-400 list-disc list-inside leading-relaxed">
+
+            <li>Programmed PLC automation logic and safety interlocks using RSLogix 500 and Studio 5000.</li>
+
+            <li>Built HMI touchscreens and alarm dashboards in FactoryTalk Optix and GE IFIX.</li>
+
+            <li>Set up industrial Ethernet/IP networks, subnet routing, and servers for machine-vision cameras and remote I/O.</li>
+
+          </ul>
+
+        </div>
+
+
+
+        <!-- MMT & Thunderbolt -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+          
+
+          <div class="rounded-lg comp-card p-4 flex flex-col justify-between">
+
+            <div>
+
+              <div class="flex items-start justify-between gap-1">
+
+                <div>
+
+                  <h4 class="text-sm font-bold text-white">Smithsonian MMT Observatory</h4>
+
+                  <span class="text-[11px] font-mono text-emerald-400">Engineering Shadow</span>
+
+                </div>
+
+                <span class="font-mono text-[10px] text-stone-500">Summer 2024</span>
+
+              </div>
+
+              <button type="button" class="mt-2.5 w-full h-28 rounded bg-[#090e0b] border border-stone-800 overflow-hidden relative cursor-pointer group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('mmt-telescope.png', '6.5m Telescope — Mount Hopkins, AZ')">
+
+                <img src="mmt-telescope.png" alt="MMT Telescope" class="h-full w-full object-cover group-hover:scale-105 transition duration-200">
+
+                <span class="absolute bottom-1 right-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-400">Expand</span>
+
               </button>
 
               <p class="mt-2.5 text-xs text-stone-400 leading-relaxed">
-                Structures team lead on an actively stabilized thrust-vectoring rocket. I run the load path analysis, lead CAD reviews, machine motor mounts and brackets on the mill and lathe, and work directly with avionics to pack flight computers and servos cleanly into the airframe.
+
+                Shadowed engineers on the 6.5m telescope. Helped with mechanical maintenance and optical calibration, and saw how they tune servo motion control for precise optomechanical tracking.
+
               </p>
+
             </div>
-            <div class="mt-3 flex flex-wrap gap-1 font-mono text-[10px] text-emerald-300/90">
-              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Structures Lead</span>
-              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Load Paths</span>
-              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Fusion 360 CAM</span>
-            </div>
+
+            <div class="mt-2 font-mono text-[10px] text-stone-500">Mount Hopkins, AZ</div>
+
           </div>
 
-          <!-- ASTRA Testbed -->
-          <div class="rounded-lg comp-card p-4 flex flex-col justify-between">
-            <div>
-              <div class="flex items-start justify-between gap-2">
-                <div>
-                  <h3 class="text-sm font-bold text-white">ASTRA Dynamic Flight Controls Rig</h3>
-                  <div class="text-[11px] font-mono text-emerald-400">Purdue Space Program Active Controls</div>
-                </div>
-                <span class="font-mono text-[10px] text-stone-500">2025 – 2026</span>
-              </div>
 
-              <div class="mt-3 grid grid-cols-2 gap-2">
-                <button type="button" class="h-36 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('astra-diagram.png', 'ASTRA Testbed Architecture: 2-Axis Gimbal & Motor Mounts')">
-                  <img src="astra-diagram.png" alt="ASTRA Diagram" class="max-h-full max-w-full object-contain p-1 group-hover:scale-105 transition-transform duration-200">
-                  <span class="absolute bottom-1 left-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-400">Diagram</span>
-                </button>
-                <div class="h-36 rounded bg-[#090e0b] border border-stone-800 overflow-hidden relative">
-                  <iframe class="w-full h-full" src="https://www.youtube.com/embed/1QAoMNO4t8Q" title="ASTRA Flight Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <div class="rounded-lg comp-card p-4 flex flex-col justify-between">
+
+            <div>
+
+              <div class="flex items-start justify-between gap-1">
+
+                <div>
+
+                  <h4 class="text-sm font-bold text-white">Thunderbolt Welding</h4>
+
+                  <span class="text-[11px] font-mono text-emerald-400">Fabricator &amp; Welder</span>
+
                 </div>
+
+                <span class="font-mono text-[10px] text-stone-500">2022 – 2024</span>
+
               </div>
 
               <p class="mt-2.5 text-xs text-stone-400 leading-relaxed">
-                Helped build a benchtop testbed to debug flight software safely on the ground. Designed frame components, motor mounts, and a 2-axis gimbal plate so we could check how sensors react under real motor thrust.
+
+                Fabricated steel trailers, fixtures, and custom weldments straight from blueprints. Ran band saws, ironworkers, and GMAW/SMAW rigs under OSHA-10 standards. Good practical experience for knowing how parts actually assemble.
+
               </p>
+
             </div>
-            <div class="mt-3 flex flex-wrap gap-1 font-mono text-[10px] text-emerald-300/90">
-              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">2-Axis Gimbal</span>
-              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Sensor Testing</span>
-              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Benchtop Rig</span>
+
+            <div class="mt-3 flex flex-wrap gap-1 font-mono text-[10px] text-stone-400">
+
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-stone-800">GMAW / SMAW</span>
+
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-stone-800">OSHA-10</span>
+
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-stone-800">Midland, NC</span>
+
             </div>
+
           </div>
 
-          <!-- Morphing Camber Wing -->
-          <div class="rounded-lg comp-card p-4 flex flex-col justify-between">
-            <div>
-              <div class="flex items-start justify-between gap-2">
-                <div>
-                  <h3 class="text-sm font-bold text-white">Morphing Camber Wing</h3>
-                  <div class="text-[11px] font-mono text-emerald-400">Aerodynamics &amp; Adaptive Structures</div>
-                </div>
-                <span class="font-mono text-[10px] text-stone-500">2026</span>
-              </div>
 
-              <div class="mt-3 grid grid-cols-2 gap-2">
-                <button type="button" class="h-28 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('morphing-wing-cad.png', 'Morphing Camber Wing Internal CAD &amp; Kinematics')">
-                  <img src="morphing-wing-cad.png" alt="Morphing Wing CAD" class="max-h-full max-w-full object-contain p-1 group-hover:scale-105 transition duration-200">
-                  <span class="absolute bottom-1 left-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-400">CAD Model</span>
-                </button>
-                <button type="button" class="h-28 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('morphing-wing-prototype.jpg', 'Morphing Camber Wing Prototype Assembly')">
-                  <img src="morphing-wing-prototype.jpg" alt="Morphing Wing Prototype" class="max-h-full max-w-full object-cover group-hover:scale-105 transition duration-200">
-                  <span class="absolute bottom-1 left-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-400">Prototype</span>
-                </button>
-              </div>
 
-              <p class="mt-2.5 text-xs text-stone-400 leading-relaxed">
-                Designed and prototyped an active morphing camber airfoil to dynamically optimize lift-to-drag ratios across flight regimes. Integrated compliant mechanisms and actuation to reduce parasitic drag without traditional hinged control surface gaps.
-              </p>
-            </div>
-            <div class="mt-3 flex flex-wrap gap-1 font-mono text-[10px] text-emerald-300/90">
-              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Compliant Structures</span>
-              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Drag Reduction</span>
-              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Rapid Prototyping</span>
-            </div>
-          </div>
+        </div>
 
-          <!-- CNC Machining -->
-          <div class="rounded-lg comp-card p-4 flex flex-col justify-between">
-            <div>
-              <div class="flex items-start justify-between gap-2">
-                <div>
-                  <h3 class="text-sm font-bold text-white">CNC Machining &amp; CAM</h3>
-                  <div class="text-[11px] font-mono text-emerald-400">Fusion 360 &bull; Aluminum Milling</div>
-                </div>
-                <span class="font-mono text-[10px] text-stone-500">Machine Shop</span>
-              </div>
 
-              <div class="mt-3 grid grid-cols-2 gap-2">
-                <button type="button" class="h-28 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('fusion-cam-toolpath.png', 'Fusion 360 CAM Toolpaths')">
-                  <img src="fusion-cam-toolpath.png" alt="Fusion 360 CAM" class="max-h-full max-w-full object-contain p-1 group-hover:scale-105 transition duration-200">
-                  <span class="absolute bottom-1 left-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-400">Toolpaths</span>
-                </button>
-                <button type="button" class="h-28 rounded bg-[#090e0b] border border-stone-800 flex items-center justify-center relative cursor-pointer overflow-hidden group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('cnc-machined-part.png', 'Finished Milled Aluminum Part')">
-                  <img src="cnc-machined-part.png" alt="Machined Part" class="max-h-full max-w-full object-contain p-1 group-hover:scale-105 transition duration-200">
-                  <span class="absolute bottom-1 left-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-400">Part</span>
-                </button>
-              </div>
 
-              <p class="mt-2.5 text-xs text-stone-400 leading-relaxed">
-                Wrote CAM toolpaths in Fusion 360 using adaptive roughing and boring routines. Milled the finished aluminum hardware on the CNC, hitting tight bore tolerances and clean surface finishes.
-              </p>
-            </div>
-            <div class="mt-3 flex flex-wrap gap-1 font-mono text-[10px] text-emerald-300/90">
-              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Fusion 360 CAM</span>
-              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">CNC Milling</span>
-              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Manual Lathe</span>
-            </div>
-          </div>
+      </div>
 
-          <!-- Solar Oven Challenge -->
-          <div class="rounded-lg comp-card p-4 flex flex-col justify-between">
-            <div>
-              <div class="flex items-start justify-between gap-2">
-                <div>
-                  <h3 class="text-sm font-bold text-white">Solar Thermal Parabolic Oven</h3>
-                  <div class="text-[11px] font-mono text-emerald-400">UA Engineering Challenge &bull; 1st Place</div>
-                </div>
-                <span class="font-mono text-[10px] text-stone-500">2024</span>
-              </div>
-              <p class="mt-2.5 text-xs text-stone-400 leading-relaxed">
-                Engineered, modeled, and tested a parabolic solar thermal oven. Took 1st place in overall thermal concentration and structural rigidity by keeping the frame lightweight while maximizing focal-point heat.
-              </p>
+    </section>
+
+
+
+    <!-- SECTION 3: LEADERSHIP -->
+
+    <section id="leadership" class="relative py-14 border-b border-stone-800/60">
+
+      <div class="mx-auto max-w-5xl px-5">
+
+        <span class="text-xs font-mono font-semibold uppercase tracking-wider text-emerald-400">04 // Beyond The Shop</span>
+
+        <h2 class="text-lg font-bold text-white mt-0.5 mb-5">Leadership &amp; Diving</h2>
+
+
+
+        <div class="rounded-lg comp-card p-4 flex flex-col sm:flex-row items-center gap-4">
+
+          <button type="button" class="h-28 w-full sm:w-40 rounded bg-[#090e0b] border border-stone-800 overflow-hidden relative flex-shrink-0 cursor-pointer group focus:outline-none focus:ring-1 focus:ring-emerald-500" onclick="openModal('jonathan-scuba.jpg', 'Jonathan Yates // Technical Diving')">
+
+            <img src="jonathan-scuba.jpg" alt="Scuba Diving" class="h-full w-full object-cover group-hover:scale-105 transition duration-200">
+
+            <span class="absolute bottom-1 right-1 rounded bg-stone-950/80 px-1 py-0.5 text-[9px] font-mono text-stone-400">Expand</span>
+
+          </button>
+
+          <div class="flex-1">
+
+            <div class="flex items-baseline justify-between gap-2">
+
+              <h3 class="text-sm font-bold text-white">Purdue Scuba Club</h3>
+
+              <span class="font-mono text-[10px] text-stone-500">Vice President // Aug 2025 – Present</span>
+
             </div>
-            <div class="mt-3 flex flex-wrap gap-1 font-mono text-[10px] text-emerald-300/90">
-              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">1st Place</span>
-              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Thermal Testing</span>
-              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Rapid Prototyping</span>
+
+            <p class="mt-1.5 text-xs text-stone-400 leading-relaxed">
+
+              Help lead club operations, inspect technical dive gear, and organize logistics and safety planning for open-water student trips.
+
+            </p>
+
+            <div class="mt-2.5 flex flex-wrap gap-1 font-mono text-[10px] text-emerald-300/80">
+
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">SSI Advanced Open Water</span>
+
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Gear Inspection</span>
+
+              <span class="rounded bg-[#121c17] px-2 py-0.5 border border-emerald-900/50">Field Safety</span>
+
             </div>
+
           </div>
 
         </div>
+
       </div>
+
     </section>
+
+
+
+    <!-- SECTION 4: SKILLS -->
+
+    <section id="skills" class="relative py-14 border-b border-stone-800/60">
+
+      <div class="mx-auto max-w-5xl px-5">
+
+        <span class="text-xs font-mono font-semibold uppercase tracking-wider text-emerald-400">05 // Toolkit</span>
+
+        <h2 class="text-lg font-bold text-white mt-0.5 mb-5">Technical Skills &amp; Certifications</h2>
+
+
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2.5 font-mono text-xs">
+
+          <div class="rounded comp-card p-3">
+
+            <div class="text-emerald-400 font-bold text-[10px]">// CONTROLS &amp; SOFTWARE</div>
+
+            <p class="mt-1 text-stone-400 text-[11px] leading-relaxed">Studio 5000, RSLogix 500, FactoryTalk Optix, GE IFIX, MATLAB, Python, C</p>
+
+          </div>
+
+          <div class="rounded comp-card p-3">
+
+            <div class="text-emerald-400 font-bold text-[10px]">// CAD &amp; ANALYSIS</div>
+
+            <p class="mt-1 text-stone-400 text-[11px] leading-relaxed">Fusion 360 (Certified CAD/CAM), Siemens NX (CAD &amp; FEM), GD&amp;T, Blueprint Reading</p>
+
+          </div>
+
+          <div class="rounded comp-card p-3">
+
+            <div class="text-emerald-400 font-bold text-[10px]">// HARDWARE &amp; SYSTEMS</div>
+
+            <p class="mt-1 text-stone-400 text-[11px] leading-relaxed">Industrial Ethernet/IP, Avionics Packaging, Sensor Interfacing, Soldering</p>
+
+          </div>
+
+          <div class="rounded comp-card p-3">
+
+            <div class="text-emerald-400 font-bold text-[10px]">// FAB &amp; CERTS</div>
+
+            <p class="mt-1 text-stone-400 text-[11px] leading-relaxed">CNC Mill (CAM), Manual Lathe, CTE Welding, 3D Printing, OSHA-10</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer id="contact" class="relative py-10 bg-[#080d0a]">
+
+      <div class="mx-auto max-w-5xl px-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+
+        <div>
+
+          <div class="font-bold text-white text-sm">Jonathan Yates</div>
+
+          <p class="text-[11px] font-mono text-stone-500">Purdue Aerospace Engineering &bull; West Lafayette, IN</p>
+
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3 font-mono text-xs">
+
+          <a href="mailto:yates64@purdue.edu" class="text-emerald-400 hover:text-emerald-300">yates64@purdue.edu</a>
+
+          <span class="text-stone-700">//</span>
+
+          <a href="tel:9802696162" class="text-stone-400 hover:text-stone-200">(980) 269-6162</a>
+
+          <span class="text-stone-700">//</span>
+
+          <a href="https://linkedin.com/in/jonathan-yates-purdue" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-stone-200">LinkedIn</a>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+
+
+  </main>
+
+
+
+  <!-- Interactive Lightbox Modal -->
+
+  <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-sm p-4 flex flex-col items-center justify-center cursor-pointer" onclick="closeModal()">
+
+    <div class="max-w-4xl max-h-[88vh] flex flex-col items-center" onclick="event.stopPropagation()">
+
+      <img id="modalImg" src="" alt="Detailed View" class="max-h-[80vh] max-w-full rounded border border-stone-700 object-contain shadow-2xl">
+
+      <div id="modalCaption" class="mt-3 text-center text-xs font-mono text-stone-300 bg-stone-900/90 px-4 py-1.5 rounded border border-stone-800"></div>
+
+    </div>
+
+  </div>
+
+
+
+  <script>
+
+    function openModal(imgSrc, caption) {
+
+      document.getElementById('modalImg').src = imgSrc;
+
+      document.getElementById('modalCaption').innerText = caption;
+
+      document.getElementById('imageModal').classList.remove('hidden');
+
+      document.body.classList.add('overflow-hidden');
+
+    }
+
+
+
+    function closeModal() {
+
+      document.getElementById('imageModal').classList.add('hidden');
+
+      document.body.classList.remove('overflow-hidden');
+
+    }
+
+
+
+    // Close on Escape key
+
+    window.addEventListener('keydown', (e) => {
+
+      if (e.key === 'Escape') closeModal();
+
+    });
+
+  </script>
+
+
+
+</body>
+
+</html>,
+
